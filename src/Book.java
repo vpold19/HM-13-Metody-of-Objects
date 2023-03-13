@@ -23,4 +23,11 @@ public class Book {
     public String toString(){
         return "Название книги " + this.bookName + " и год выпуска " + this.publishingYear;
     }
+    public boolean equals(Object other){
+        if (this.getClass() != other.getClass()){
+            return false;
+        }
+        Book harryPotter = (Book) other;
+        return bookName.equals(harryPotter.bookName);
+    }
 }
