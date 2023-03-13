@@ -12,7 +12,12 @@ public class Main {
         Book harryPotter = new Book("Harry Potter", 2000,valery);
         System.out.println(harryPotter);
         System.out.println(valery);
+        System.out.println();
         System.out.println(stalker.equals(harryPotter));
+        System.out.println();
+        System.out.println(stalker.getBookName() + ": " + stalker.hashCode());
+        System.out.println(harryPotter.getBookName() + ": " + harryPotter.hashCode());
+
 
 
         System.out.println();

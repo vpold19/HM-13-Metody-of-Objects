@@ -15,11 +15,16 @@ public class Author {
     public String toString(){
         return "Имя " + this.authorName + " Фамилия " + this.authorSurname;
     }
+    @Override
     public boolean equals(Object other){
         if (this.getClass() != other.getClass()){
             return false;
         }
         Author valery = (Author) other;
         return authorName.equals(valery.authorName);
+    }
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(authorName);
     }
 }
